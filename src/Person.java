@@ -27,15 +27,16 @@ public class Person {
     }
 
     public String getFirstName(){
-        return firsName;
+        //int age=5; böyle yazılma durumuna göre this ile önlem aldık
+        return this.firsName;
     }
 
     public String getLastName(){
-        return lastName;
+        return this.lastName;
     }
 
     public int getAge(){
-        return age;
+        return this.age;
     }
 
     public boolean isTeen(int age){
@@ -44,8 +45,15 @@ public class Person {
 //        }
 //        else
 //        {return false;}
-        return age<=19 && age>=13;
+        return this.age<=19 && this.age>=13;
     }
 
 
+    public String[] getHobbies() {
+        return this.hobbies;
+    }
+
+    public double getSalary() {
+        return this.salary;
+    }
 }
